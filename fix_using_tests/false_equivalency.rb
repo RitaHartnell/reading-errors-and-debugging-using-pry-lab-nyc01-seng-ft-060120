@@ -19,6 +19,5 @@ end
 
 def runner
   prompt_user
-  num = get_user_input.to_i
-  selection(num)
+  selection(get_user_input)
 end

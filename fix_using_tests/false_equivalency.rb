@@ -1,8 +1,6 @@
 # don't forget to add: require 'pry'
-require 'pry'
 def get_user_input
   gets.chomp
-  binding.pry
 end
 
 def prompt_user
@@ -21,5 +19,6 @@ end
 
 def runner
   prompt_user
+  num = get_user_input.to_i
   selection(get_user_input)
 end
